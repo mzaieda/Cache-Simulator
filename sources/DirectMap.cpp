@@ -6,7 +6,6 @@ using namespace std;
 
 DirectMap::DirectMap (uint16_t p_cache_line_size , uint16_t p_cache_size, bool _wb)
 {
-    //Write your code here
     cache_line_size = p_cache_line_size;    //set the cache_line_size with the coming parameter
     cache_size = p_cache_size;              //set the cache_size with the coming parameter
 
@@ -21,7 +20,6 @@ DirectMap::DirectMap (uint16_t p_cache_line_size , uint16_t p_cache_size, bool _
 }
 void DirectMap::access (uint64_t full_address,char mode)
 {
-    //Write your code here
     int b_offsets;          //bit wise offset
     int b_index;            //bit wise index
     int b_tag;              //bit wise tag
@@ -37,7 +35,6 @@ void DirectMap::access (uint64_t full_address,char mode)
 }
 void DirectMap::printStats (unsigned int crc,unsigned int cwc ,unsigned int mrc ,unsigned int mwc)
 {
-   //Write your code here
    //initializing integer variables by zero for printing
     long t_miss = 0;                 //total miss = 0
     long t_hits = 0;                 //total hits = 0
