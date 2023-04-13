@@ -12,9 +12,9 @@ class DirectMap
         uint16_t cache_size;
         uint8_t cs_bits;
         uint8_t ls_bits;
-        int offset;  //added by me for the constructor
-        int index;  //added by me for the constructor
-        int tag;    //added by me for the constructor
+        int offset; 
+        int index;
+        int tag;   
         std::map <uint16_t,CacheLine *> cache;
     public:
         DirectMap (uint16_t p_cache_line_size , uint16_t p_cache_size, bool _wb=true);
