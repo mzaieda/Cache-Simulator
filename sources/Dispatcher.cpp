@@ -20,7 +20,6 @@ bool Dispatcher::dispatch ()
         int r = fscanf(f, "%s %c %llx\n", skip, &mode,&address);
         while (r != EOF)
         {
-            //Write your code here
             directMap->access(address, mode);                       //call direct map access with the mode and address scaned from the file
             r = fscanf(f, "%s %c %llx\n", skip, &mode, &address);   
         }
