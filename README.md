@@ -22,7 +22,7 @@ To use the cache simulator, follow these steps:
 
 For example:
 
-`./bin/cache_sim wb ./pintrace.out 1024 2048 2 4 8`
+`./bin/cache_sim wb ./pintrace.out 1024 2048 2 4 8 16`
 
 This will run the cache simulator with the specified parameters.
 
@@ -39,20 +39,19 @@ After running the simulator, the program will output statistics about the cache 
 
 
 ```
----------------
-Cache mode: write-back
-File name: pintrace.out
-Cache size: 1024 bytes
-Block size: 2048 bytes
-Associativity: 2
-Number of sets: 4
-Trace level: 8
----------------
-
-Memory accesses: 1000
-Cache hits: 700
-Cache misses: 300
-Hit rate: 70.00%
+Total Misses: 15532
+Total Hits: 21360733
+Memory Read Access Attempts: 16873908
+Memory Write Access Attempts: 4502357
+Total Memory Access Attempts: 21376265
+Memory Read Access: 15532
+Memory Write Access: 8216
+Total # of cycles for cache read: 33747816
+Total # of cycles for cache write: 18009428
+Total # of cycles for cache access: 51757244
+Total # of cycles for memory read: 124256
+Total # of cycles for memory write: 131456
+Total # of cycles for memory access: 255712 
 ```
 
 ## License
