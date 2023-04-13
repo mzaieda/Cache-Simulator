@@ -89,7 +89,6 @@ uint64_t CacheLine::getMEMWrites()
 }
 void CacheLine::access (uint64_t p_tag, char mode)
 {
-   //Write your code here
    mode1 = mode;   //mode from the .h file to be able to access in the handle miss
 
    if(p_tag == tag){    //check if the tag is equal to p_tag
